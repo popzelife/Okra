@@ -1,9 +1,9 @@
 # What is Okra ?
-Okra is an open source, free and multi-plateform tool for teams and individual willing to friendly track their OKR: Objectives and Key Results. If you want to learn more about OKR you can have a look at that [https://github.com/domenicosolazzo/awesome-okr](awesome git repo). There is already a bunch of tools to manage OKR but they all come with a price and tend to be difficult to use for small team. 
+Okra is an open source, free and multi-plateform tool for teams and individual willing to friendly track their OKR: Objectives and Key Results. If you want to learn more about OKR you can have a look at that [awesome git repo](https://github.com/domenicosolazzo/awesome-okr). There is already a bunch of tools to manage OKR but they all come with a price and tend to be difficult to use for small team. 
 
 ![Galaxy map](http://popzelife.me/index/okra/galaxy-map.png)
 
-The aim of Okra is to help people managing their own time with more effeciency connecting with each other, still freely. This tool is first designed for the Mozillian community. You can discussed the development here: [link soon].
+The aim of Okra is to help people managing their own time with more effeciency connecting with each other, still freely. This tool is first designed for the Mozillian community. You can discussed the development here: [Mozilla Discourse Topic](https://discourse.mozilla-community.org/t/okra-managing-objectives-and-key-results/8806).
 
 
 # As spicy as...
@@ -13,6 +13,6 @@ It the same for our tool, we want to provide to you an app flexible and compatib
 
 
 # Coding Okra
-The development of Okra is now being discussed at Mozilla community Discourse. You can watch a layer sample [http://popzelife.me/okra.html](here) - still a preview.
+The development of Okra is now being discussed at Mozilla community Discourse. You can watch a layer sample [here](http://popzelife.me/okra.html) - still a preview.
 
 ![Sample preview](http://popzelife.me/index/okra/sample-okr.png)
