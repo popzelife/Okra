@@ -20,7 +20,7 @@ It's the same for this tool, we want to provide to you an app flexible and compa
 # Okra a web-app
 The development of Okra is now being discussed at Mozilla community Discourse. You can see the live mockup [here](http://popzelife.me/okra.html) - still an alpha version.
 <p align="center">
-  <img src="http://popzelife.me/index/okra/mockup-okr" alt="Mockup preview"/>
+  <img src="http://popzelife.me/index/okra/mockup-okr.png" alt="Mockup preview"/>
 </p>
 
 Okra is for now being developped as a web-app, its framework relies on a PHP server that hosts the users informations, along with a web page being the user-interface. The language being used are HTML 5 and CSS 3 for sure, plus PHP and Javascript (Jquery with Ajax).
