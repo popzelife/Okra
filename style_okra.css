@@ -1,0 +1,735 @@
+/*
+Theme Name: Okra stylesheet
+Theme URI: http://popzelife.me
+Author: Quentin Frémeaux
+Author URI: http://popzelife.me
+Description: Okra stylesheet for the Okra web app
+Version: Alpha 0.2
+License: Mozilla Public License Version 2.0
+License URI: http://mozilla.org/MPL/2.0/.
+*/
+/*
+----------------------------------------------------------------
+TABLE OF CONTENTS
+----------------------------------------------------------------
+1. Global Styles
+2. Body
+3. Header
+4. Sidebar
+5. Section
+6. Footer
+7. J_Query
+8. Responsive Styles
+----------------------------------------------------------------
+*/
+/*
+==========================================
+1. Global Styles
+========================================== 
+*/
+a {
+    text-decoration: none;
+}
+.inline {
+    display: inline;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.clear {
+    clear: both;
+    height: 0;
+}
+.pointer {
+    cursor: pointer;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: whitesmoke;
+    margin: -2px;
+    padding: 4px;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+            box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.button:hover {
+    background-color: #333333;
+}
+.red-button {
+    background-color: red;
+    margin: -2px;
+    padding: 4px;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    
+    -webkit-box-shadow: 0 0 3px rgba(100,0,0,0.5);
+       -moz-box-shadow: 0 0 3px rgba(100,0,0,0.5);
+            box-shadow: 0 0 3px rgba(100,0,0,0.5);
+}
+.red-button:hover {
+    background-color: #333333;
+}
+/*
+==========================================
+2. Body
+========================================== 
+*/
+html {
+    height: 100%;
+    min-width: 1200px;
+}
+body {
+    background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
+    margin: 0;
+}
+/*
+==========================================
+3. Header
+========================================== 
+*/
+.header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    
+    background-color: rgba(170,190,200,0.95);
+    
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    
+    z-index: 99;
+}
+.header .okra-title {
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    text-decoration: none;
+    
+    font-family: Lemon;
+    font-weight: bolder;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.8em;
+}
+.header .version {
+    font-family: Questrial;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 0.4em;
+    color: dimgrey;
+}
+.header .logo img {
+    position: absolute;
+    height: 80px;
+    top: -20px;
+    left: 50%;
+}
+.header .login {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    
+    font-family: Questrial;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333333;
+}
+.header .login:hover {
+    color: whitesmoke;
+}
+.header .signin {
+    position: absolute;
+    right: 120px;
+    top: 15px;
+    cursor: pointer;
+    
+    font-family: Questrial;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333333;
+}
+.header .signin:hover {
+    color: whitesmoke;
+}
+.header .login-pic img {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.header .login-pic img:hover {
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
+}
+/*
+==========================================
+4. Profil
+========================================== 
+*/
+.owner-container {
+    height: 345px;
+}
+/*
+   Profil container
+*/
+.profil-container {
+    position: relative;
+    top: 100px;
+    left: 25px;
+    min-height: 125px;
+    max-width: 40%;
+    min-width: 680px;
+    
+    background-color: aliceblue;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.profil-container {
+    color: #333333;
+    font-weight: bolder;
+    color: darkslategray;
+    font-size: 1.8em;
+}
+.profil-container .profil {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #333333;
+    text-decoration: none;
+}
+.profil-container .profil:hover {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    
+    color: grey;
+    text-decoration: none;
+    
+    -webkit-transition: all 0.5s 0.3s ease-out;
+       -moz-transition: all 0.5s 0.3s ease-out;
+         -o-transition: all 0.5s 0.3s ease-out;
+            transition: all 0.5s 0.3s ease-out;
+}
+.profil-container .persona img {
+    position: absolute;
+    top: 10px;
+    left: 260px;
+    height: 100px;
+    width: auto;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.profil-container .team {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+}
+.profil-container .region {
+    position: absolute;
+    top: 70px;
+    left: 400px;
+}
+/*
+   Map container
+*/
+.map-container {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    cursor: pointer;
+}
+.map-container span {
+    left: 10px;
+    margin-top: 10px;
+    width: 200px;
+    font-family: "Questrial";
+    font-weight: bolder;
+    color: white;
+    font-size: 1.8em;
+}
+.map-container .pic {
+    width: 400px;
+    height: 267px;
+    
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    
+    overflow: hidden;
+}
+.galaxy img {
+    width: 100%;
+    height: auto;
+    
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+    
+}
+.galaxy img:hover {
+    width: 105%;
+    height: auto;
+    
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+.map-container .text {
+    position: absolute;
+    top: 0;
+    right: 230px;
+}
+/*
+   List title
+*/
+.list-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 285px;
+    
+    font-family: Cursive;
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.owner-container .previous img{
+    position: absolute;
+    top: 350px;
+    left: 64px;
+    
+    height: 64px;
+}
+.owner-container .previous img:hover {
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
+}
+.owner-container .next img {
+    position: absolute;
+    top: 350px;
+    right: 64px;
+    
+    height: 64px;
+}
+.owner-container .next img:hover {
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
+}
+.owner-container .add img {
+    position: absolute;
+    top: 350px;
+    right: 0;
+    
+    height: 64px;
+}
+.owner-container .add img:hover {
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
+}
+.owner-container .config img {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    
+    height: 64px;
+}
+.owner-container .config img:hover {
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
+}
+/*
+==========================================
+5. Home
+========================================== 
+*/
+.parallax-viewport {
+    position: relative;
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+}
+.promo-container {
+    top: 60px;
+    height: 400px;
+    width: 100%;
+    
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.galaxy-background {
+    background: url(media/background-galaxy3.jpg) no-repeat scroll 0 0;
+    background-size: cover;
+    height: 600px;
+    width: 110%;
+}
+/*.galaxy-background:hover {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+}*/
+.promo-container .text-aera {
+    background: url(media/vg-logo.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    width: 49%;
+    height: auto;
+    padding: 5%;
+    padding-top: 75px;
+    
+    /*background-color: rgba(180, 185, 185, 0.1);*/
+    font-family: "Questrial";
+    font-size: 2.2em;
+    color: lightgrey;
+    
+    /*-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;*/
+}
+.promo-container .okra-title {
+    text-decoration: none;
+    font-family: Lemon;
+    font-weight: bolder;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.8em;
+}
+.description-container1 {
+    background-image: radial-gradient(circle farthest-corner at center, white 0%, lightgrey 100%);
+    position: relative;
+    
+    font-family: "Questrial";
+    font-size: 2.2em;
+    color: darkslategrey;
+    
+    top: 60px;
+    height: 500px;
+    width: 100%;
+    
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    z-index: 9;
+}
+.description-container1 .gif-holder{
+    position: absolute;
+    top: 160px;
+    left: 65%;
+    width: 240px;
+    height: auto;
+}
+.description-container1 .text-aera{
+    position: absolute;
+    top: 160px;
+    left: 10%;
+    width: 40%;
+}
+.description-container2 {
+    background-image: radial-gradient(circle farthest-corner at center, white 0%, lightgrey 100%);
+    position: relative;
+    
+    font-family: "Questrial";
+    font-size: 2.2em;
+    color: darkslategrey;
+    
+    top: 60px;
+    height: 300px;
+    width: 100%;
+    
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    z-index: 8;
+}
+.description-container2 .gif-holder{
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    width: 240px;
+    height: auto;
+}
+.description-container2 .text-aera{
+    position: absolute;
+    top: 120px;
+    right: 10%;
+    width: 50%;
+}
+/*
+==========================================
+6. OKRs List
+========================================== 
+*/
+.okr-container {
+    position: relative;
+    top: 100px;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 150px;
+}
+.okr-container .quarter-section {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;  
+}
+.okr-container .quarter {
+    position: relative;
+    padding-right: 2px;
+    padding-top: 10px;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    
+    background: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #F6F4EC 100%);
+    
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    
+    z-index: 5;
+}
+.edit img {
+    position: absolute;
+    right: -40px;
+    top: 45px;    
+    height: 32px;
+    cursor: pointer;
+}
+.edit img:hover {
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
+}
+.accept img {
+    position: absolute;
+    right: -40px;
+    top: 45px;    
+    height: 32px;
+    cursor: pointer;
+}
+.accept img:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+.refuse img {
+    position: absolute;
+    right: -40px;
+    top: 0;    
+    height: 32px;
+    cursor: pointer;
+}
+.refuse img:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+.okr-container .quarter-info {
+    position: absolute;
+    margin-top: 14px;
+    right: 0;
+}
+
+.okr-container .timeline-section {
+    position: relative;
+    margin: 0 3% auto;
+    width: 97%;
+    background-color: white;
+}
+.okr-container .timeline {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+            box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    
+    z-index: 4;
+}
+.okr-container .timeline-performance {
+    position: absolute;
+    margin: -55px 0;
+    right: 0;
+    width: 140px;
+    height: 100%;
+    font-size: 1.7em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid white;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.okr-container .key {
+    position: relative;
+    width: 92%;
+    margin: 0;
+    margin-left: 8%;
+    
+    background: linear-gradient(180deg, lightgrey, #F1F1F1);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+            box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+/* 
+   Text format 
+*/
+.title1 {
+    position: relative;
+    margin: 10px;
+    
+    font-weight: bolder;
+    font-size: 2.8em;
+}
+.text-performance {
+    position: relative;
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.text-overall {
+    position: relative;
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.title2 {
+    position: relative;
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.title2-5 {
+    position: absolute;
+    margin: 20px 0;
+    
+    top: 0;
+    left: 400px;
+    
+    font-weight: lighter;
+    font-size: 1.7em;
+}
+.title3 {
+    position: relative;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+    z-index: 5;
+}
+.italic {
+    font-style: italic;
+    font-size: 1.2em;
+}
+/*
+   Global display
+*/
+.blue-bg {
+    background-color: skyblue;
+}
+.green-bg {
+    background-color: greenyellow;
+}
+.orange-bg {
+    background-color: orange;
+}
+.blue {
+    color: deepskyblue;
+}
+.orange {
+    color: darkorange;
+}
+.green {
+    color: limegreen;
+}
+/*
+==========================================
+7. Login - Account
+========================================== 
+*/
+.connect-container {
+    position: relative;
+    top: 150px;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    
+    background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #F6F4EC 100%);
+    font-family: "Questrial";
+    
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+/*
+==========================================
+8. Footer
+========================================== 
+*/
+.footer {
+    
+}
+/*
+==========================================
+9. Responsive Styles
+========================================== 
+*/
+@media screen and (max-width: 1200px) {
+    .map-container {
+        left: 800px;
+    }
+    .owner-container .next img {
+        left: 1072px;
+    }
+    .owner-container .add img {
+        left: 1136px;
+    }
+}
